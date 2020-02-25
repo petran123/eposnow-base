@@ -8,7 +8,8 @@
 }
 
 .header-container {
-    padding-top: 2.4rem;
+    padding: 2.7rem 0;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -47,10 +48,10 @@
     display: inline-flex;
     align-items: center;
     svg {
-        color: darkgrey;
+        color: #777;
         width: 1.2rem;
-        margin-left: 0.2rem;
-        margin-right: -0.2rem;
+        margin-left: 0.3rem;
+        margin-right: -0.3rem;
     }
 }
 

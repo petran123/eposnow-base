@@ -371,7 +371,7 @@ a {
 }
 
 .header-container {
-  padding-top: 2.4rem;
+  padding: 2.7rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,10 +426,10 @@ a {
 }
 
 .header-link svg {
-  color: darkgrey;
+  color: #777;
   width: 1.2rem;
-  margin-left: 0.2rem;
-  margin-right: -0.2rem;
+  margin-left: 0.3rem;
+  margin-right: -0.3rem;
 }
 
 .header-contact {
@@ -450,5 +450,54 @@ a {
   letter-spacing: 1px;
   color: #00B4FA;
   font-weight: 700;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.1rem;
+}
+
+.card-set .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 48%;
+  position: relative;
+}
+
+.card-set .card .card-photo-container img {
+  max-height: 43rem;
+}
+
+.floating-box {
+  position: absolute;
+  background-color: white;
+  left: 3.3rem;
+  top: 9rem;
+  width: 20rem;
+  height: 10rem;
+  -webkit-box-shadow: 0px 0px 10px #333;
+          box-shadow: 0px 0px 10px #333;
+}
+
+.floating-box h1 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
