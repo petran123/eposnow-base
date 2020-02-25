@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button-link {
+    color: white;
+    background-color: $eposBlue;
+    padding: 0.8rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 1.15rem;
+}

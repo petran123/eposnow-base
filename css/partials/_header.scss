@@ -1,0 +1,71 @@
+* {
+    font-family: 'Open sans', ;
+}
+
+.header {
+    width: 100%;
+    
+}
+
+.header-container {
+    padding-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-side {
+    
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.header-left {
+    max-width: 430px;
+    a {
+        margin-left: 1.65rem;
+    }
+}
+
+.header-right {
+    .header-link {
+        margin-right: 1.7rem;
+    }
+}
+
+.logo-image {
+    padding-right: 1.7rem;
+    border-right: solid 1px gainsboro;
+    img {
+    width: 175px;
+    }
+}
+
+.header-link {
+    font-size: 1.16rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    svg {
+        color: darkgrey;
+        width: 1.2rem;
+        margin-left: 0.2rem;
+        margin-right: -0.2rem;
+    }
+}
+
+.header-contact {
+    border-left: solid 1px gainsboro;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-tel {
+    margin-left: 1.65rem;
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: $eposBlue;
+    font-weight: 700;
+}
