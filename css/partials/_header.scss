@@ -1,7 +1,3 @@
-* {
-    font-family: 'Open sans', ;
-}
-
 .header {
     width: 100%;
     
@@ -23,7 +19,7 @@
 
 .header-left {
     max-width: 430px;
-    a {
+    .header-link {
         margin-left: 1.65rem;
     }
 }
@@ -36,7 +32,7 @@
 
 .logo-image {
     padding-right: 1.7rem;
-    border-right: solid 1px gainsboro;
+    border-right: solid 1px $headerBorder;
     img {
     width: 175px;
     }
@@ -56,10 +52,15 @@
 }
 
 .header-contact {
-    border-left: solid 1px gainsboro;
+    border-left: solid 1px $headerBorder;
     height: 100%;
     display: flex;
     align-items: center;
+    .button-link {
+        font-weight: 600;
+        font-size: 1.15rem;
+        padding: 0.8rem 1.25rem;
+    }
 }
 
 .contact-tel {

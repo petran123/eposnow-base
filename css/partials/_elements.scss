@@ -1,4 +1,17 @@
+* {
+    font-family: 'Open sans', ;
+    color: $medium;
+}
+
 a {
     text-decoration: none;
-    color: #444;
+    color: $medium;
+}
+
+h1 {
+    color: $dark;
+}
+
+p {
+    color: $light;
 }

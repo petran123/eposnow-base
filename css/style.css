@@ -341,29 +341,47 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Open sans";
+  color: #444;
+}
+
 a {
   text-decoration: none;
   color: #444;
 }
 
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
 .container {
   width: 100%;
   max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button-link {
   color: white;
-  background-color: #00B4FA;
-  padding: 0.8rem 1.25rem;
+  background-color: #00b4fa;
   border-radius: 2rem;
-  font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+  padding: 1rem 3.3rem;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
 }
 
-* {
-  font-family: "Open sans";
+.button-link:hover {
+  background-color: #00aafa;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -397,7 +415,7 @@ a {
   max-width: 430px;
 }
 
-.header-left a {
+.header-left .header-link {
   margin-left: 1.65rem;
 }
 
@@ -443,12 +461,18 @@ a {
           align-items: center;
 }
 
+.header-contact .button-link {
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 0.8rem 1.25rem;
+}
+
 .contact-tel {
   margin-left: 1.65rem;
   margin-right: 1.2rem;
   font-size: 1.3rem;
   letter-spacing: 1px;
-  color: #00B4FA;
+  color: #00b4fa;
   font-weight: 700;
 }
 
@@ -482,22 +506,183 @@ a {
 }
 
 .card-set .card .card-photo-container img {
-  max-height: 43rem;
+  max-height: 43.3rem;
 }
 
 .floating-box {
   position: absolute;
   background-color: white;
-  left: 3.3rem;
-  top: 9rem;
-  width: 20rem;
-  height: 10rem;
-  -webkit-box-shadow: 0px 0px 10px #333;
-          box-shadow: 0px 0px 10px #333;
+  padding: 0.8rem 0rem 4rem 3.3rem;
+  left: 0;
+  top: 8.3rem;
+  min-width: 28.4rem;
+  max-width: 32rem;
+  -webkit-box-shadow: 0 0.8rem 4rem rgba(119, 119, 119, 0.35);
+          box-shadow: 0 0.8rem 4rem rgba(119, 119, 119, 0.35);
 }
 
-.floating-box h1 {
+.floating-box h3 {
   font-size: 3rem;
   font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.floating-box p {
+  color: #999;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 2.7rem;
+  padding-right: 1rem;
+  max-width: 27.4rem;
+}
+
+.floating-box.padded {
+  padding-right: 1.4rem;
+}
+
+.trustpilot {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.trustpilot img {
+  width: 57rem;
+}
+
+.introduction {
+  margin-top: 8rem;
+  max-width: 60%;
+  text-align: center;
+}
+
+.introduction .introduction-title {
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+  line-height: 3.7rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+
+.introduction .introduction-description {
+  font-size: 1.5rem;
+  text-align: initial;
+  max-width: 80%;
+  text-indent: 1rem;
+  color: #555;
+  line-height: 2.3rem;
+}
+
+.small-card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 4rem 0;
+}
+
+.small-card-set .small-card {
+  max-width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-card-set .small-card img {
+  width: 4rem;
+}
+
+.small-card-set .small-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.small-card-set .small-card p {
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  font-size: 1.5rem;
+  padding: 0rem 4.2rem;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+.till-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 3rem;
+}
+
+.till-set .left-side {
+  margin: 6.5rem 0 0 3rem;
+  max-width: 42rem;
+  position: relative;
+  z-index: 1;
+}
+
+.till-set .left-side .techradar {
+  margin-bottom: 5.5rem;
+  margin-left: 1.7rem;
+}
+
+.till-set .left-side .techradar .techradar-images {
+  max-width: 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.till-set .left-side .techradar .techradar-images img {
+  width: 43%;
+}
+
+.till-set .left-side .techradar .techradar-images img:first-of-type {
+  width: 44%;
+}
+
+.till-set .left-side .techradar p {
+  font-size: 1.16rem;
+  line-height: 1.9rem;
+  max-width: 41rem;
+}
+
+.till-set .left-side .the-complete-solution h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.till-set .till-image {
+  width: calc(100% - 44rem);
+}
+
+.till-set .till-image img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
