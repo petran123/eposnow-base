@@ -423,6 +423,11 @@ p {
   margin-right: 1.7rem;
 }
 
+.header-right .header-link img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
 .logo-image {
   padding-right: 1.7rem;
   border-right: solid 1px gainsboro;
@@ -646,8 +651,7 @@ p {
 }
 
 .till-set .left-side .techradar {
-  margin-bottom: 5.5rem;
-  margin-left: 1.7rem;
+  margin-bottom: 5rem;
 }
 
 .till-set .left-side .techradar .techradar-images {
@@ -671,18 +675,95 @@ p {
   font-size: 1.16rem;
   line-height: 1.9rem;
   max-width: 41rem;
+  margin-left: 1.7rem;
+}
+
+.till-set .left-side .the-complete-solution {
+  margin-left: 2rem;
 }
 
 .till-set .left-side .the-complete-solution h2 {
+  color: #333;
   font-size: 3rem;
   font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.till-set .left-side .the-complete-solution ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 4.2rem;
+}
+
+.till-set .left-side .the-complete-solution ul li {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 3.2rem;
+}
+
+.till-set .left-side .the-complete-solution ul li img {
+  width: 2rem;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+
+.till-set .left-side .the-complete-solution .button-link {
+  padding: 1rem 2.5rem;
 }
 
 .till-set .till-image {
-  width: calc(100% - 44rem);
+  width: calc(100% - 43.5rem);
+  margin-left: -2rem;
 }
 
 .till-set .till-image img {
   width: 100%;
+}
+
+.video-container {
+  padding: 9.5rem 4rem;
+}
+
+.video-container .image-holder {
+  width: 88%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.video-container .image-holder img {
+  width: 100%;
+  display: block;
+}
+
+.video-container .image-holder .trustpilot-reviews {
+  background-color: #222;
+  height: 18rem;
+  width: 100%;
+}
+
+.video-container .image-holder .trustpilot-reviews .trustpilot-square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 25%;
+  height: 100%;
+  border-right: solid 1px white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-container .image-holder .trustpilot-reviews .trustpilot-square h3 {
+  color: #ddd;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.video-container .image-holder .trustpilot-reviews .trustpilot-square img {
+  width: 9rem;
 }
 /*# sourceMappingURL=style.css.map */

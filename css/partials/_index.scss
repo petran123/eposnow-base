@@ -117,41 +117,98 @@
     z-index: 1;
 
     .techradar {
-      margin-bottom: 5.5rem;
-      margin-left: 1.7rem;
-        .techradar-images {
-          max-width: 42rem;
-          display: flex;
-          justify-content: space-around;
-          img {
-            &:first-of-type {
-              width: 44%;
-            }
-            width: 43%;
+      margin-bottom: 5rem;
+
+      .techradar-images {
+        max-width: 42rem;
+        display: flex;
+        justify-content: space-around;
+        img {
+          &:first-of-type {
+            width: 44%;
           }
+          width: 43%;
         }
-      
+      }
+
       p {
         font-size: 1.16rem;
         line-height: 1.9rem;
         max-width: 41rem;
-        
+        margin-left: 1.7rem;
       }
     }
 
     .the-complete-solution {
+      margin-left: 2rem;
       h2 {
+        color: $dark;
         font-size: 3rem;
         font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 4.2rem;
+        li {
+          font-size: 1.5rem;
+          color: $light;
+          line-height: 3.2rem;
+          img {
+            width: 2rem;
+            vertical-align: text-bottom;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .button-link {
+        padding: 1rem 2.5rem;
       }
     }
   }
 
   .till-image {
-    width: calc(100% - 44rem);
-    // margin-left: -2rem;
+    width: calc(100% - 43.5rem);
+    margin-left: -2rem;
     img {
       width: 100%;
+    }
+  }
+}
+
+.video-container {
+  padding: 9.5rem 4rem;
+  
+  .image-holder {
+    width: 88%;
+    margin-left: auto;
+    margin-right: 0;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .trustpilot-reviews {
+      background-color: $darkest;
+      height: 18rem;
+      width: 100%;
+      
+      .trustpilot-square {
+        display: flex;
+        flex-flow: column;
+        width: 25%;
+        height: 100%;
+        border-right: solid 1px white;
+        align-items: center;
+        h3 {
+          color: #ddd;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        img {
+          width: 9rem;
+        }
+      }
     }
   }
 }
