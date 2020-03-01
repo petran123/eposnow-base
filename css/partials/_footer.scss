@@ -1,0 +1,85 @@
+.footer-link {
+  color: $lighter;
+}
+
+.footer-box {
+  width: 92%;
+  border-top: solid 2px gainsboro;
+  border-bottom: solid 2px gainsboro;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 4rem 0rem;
+  box-sizing: border-box;
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    a {
+      color: $lighter;
+    }
+    li {
+      font-size: 1.15rem;
+      line-height: 2.5rem;
+      color: $lighter;
+      .blue-link {
+        color: $eposBlue;
+      }
+    }
+  }
+}
+
+.legal-container {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4.5rem 5.5rem;
+  font-size: 1.2rem;
+  .footer-logo img {
+    width: 12.5rem;
+  }
+
+  .legal-left,
+  .legal-right {
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+  .legal-right .legal-item {
+    justify-content: flex-end;
+  }
+  .legal-item {
+    display: flex;
+    align-items: center;
+
+    .footer-link {
+      margin: 0 0.8rem;
+      &:last-of-type {
+      margin-right: 0;
+      }
+    }
+    .dropdown {
+      border: solid 1px #ddd;
+      box-shadow: 0px 0px 2px #ddd;
+      border-radius: 5px;
+      display: inline-flex;
+      width: 9.5rem;
+      padding: 1rem 0.5rem;
+      justify-content: space-around;
+      margin-right: 0;
+    }
+    .language-flag {
+      width: 2.3rem;
+    }
+    .caret {
+      width: 1.2rem;
+    }
+    .indented {
+      margin-inline-start: 1rem;
+    }
+  }
+}
