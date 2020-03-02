@@ -364,6 +364,107 @@ p {
   max-width: 1700px;
 }
 
+.padded-bottom {
+  padding-bottom: rem;
+}
+
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-set.single-card {
+  padding: 0 4rem 0 2rem;
+}
+
+.card-set.single-card .card {
+  width: 100%;
+}
+
+.card-set.single-card .card .card-photo-container img {
+  max-height: 45.5rem;
+}
+
+.card-set.single-card .floating-box {
+  max-width: 36.7rem;
+  top: 7.1rem;
+}
+
+.card-set.single-card .floating-box h1 {
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.8rem;
+}
+
+.card-set.single-card .floating-box p {
+  font-size: 1.31rem;
+  line-height: 2.2rem;
+  max-width: 95%;
+  -webkit-margin-after: 3.5rem;
+          margin-block-end: 3.5rem;
+}
+
+.card-set.single-card .floating-box .button-link {
+  padding: 1rem 2.4rem;
+}
+
+.card-set.two-cards {
+  padding: 0 1.1rem;
+}
+
+.card-set.two-cards .card {
+  width: 48%;
+}
+
+.card-set.two-cards .card .card-photo-container img {
+  max-height: 43.3rem;
+}
+
+.card-set.two-cards .floating-box {
+  top: 8.3rem;
+}
+
+.card-set.two-cards .floating-box p {
+  color: #999;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 2.7rem;
+  padding-right: 1rem;
+  max-width: 27.4rem;
+}
+
+.card-set .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.card-set .floating-box {
+  left: 0;
+}
+
 .button-link {
   color: white;
   background-color: #00b4fa;
@@ -432,21 +533,25 @@ p {
           align-items: center;
 }
 
-.header-left {
-  max-width: 430px;
-}
-
 .header-left .header-link {
   margin-left: 1.65rem;
 }
 
-.header-right .header-link {
-  margin-right: 1.7rem;
+.header-link.pricing {
+  margin-left: 1.2rem;
 }
 
-.header-right .header-link img {
+.header-link.greyed {
+  color: #999;
+}
+
+.header-link img {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+.header-right .header-link {
+  margin-right: 1.7rem;
 }
 
 .header-logo {
@@ -629,55 +734,6 @@ p {
 .legal-container .legal-item .indented {
   -webkit-margin-start: 1rem;
           margin-inline-start: 1rem;
-}
-
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 1.1rem;
-}
-
-.card-set .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 48%;
-  position: relative;
-}
-
-.card-set .card .card-photo-container img {
-  max-height: 43.3rem;
-}
-
-.card-set .floating-box {
-  left: 0;
-  top: 8.3rem;
-}
-
-.card-set .floating-box p {
-  color: #999;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 1.2rem;
-  margin-bottom: 3rem;
-  line-height: 2.7rem;
-  padding-right: 1rem;
-  max-width: 27.4rem;
 }
 
 .trustpilot {
@@ -926,5 +982,15 @@ p {
   vertical-align: text-top;
   margin-right: 0.3rem;
   margin-left: -0.3rem;
+}
+
+.trustpilot-floating-image {
+  position: absolute;
+  bottom: -154px;
+  right: -115px;
+}
+
+.trustpilot-floating-image img {
+  width: 25rem;
 }
 /*# sourceMappingURL=style.css.map */

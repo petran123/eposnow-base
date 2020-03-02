@@ -1,36 +1,3 @@
-.card-set {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 1.1rem;
-  .card {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    width: 48%;
-    position: relative;
-    .card-photo-container {
-      img {
-        max-height: 43.3rem;
-      }
-    }
-  }
-  .floating-box {
-    left: 0;
-    top: 8.3rem;
-    p {
-      color: $lightest;
-      font-size: 2rem;
-      font-weight: 600;
-      margin-top: 1.2rem;
-      margin-bottom: 3rem;
-      line-height: 2.7rem;
-      padding-right: 1rem;
-      max-width: 27.4rem;
-    }
-  }
-}
-
 .trustpilot {
   margin-top: 4rem;
   margin-bottom: 9rem;

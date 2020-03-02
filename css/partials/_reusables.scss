@@ -1,41 +1,113 @@
 .container {
-    width: 100%;
-    max-width: 1700px;
+  width: 100%;
+  max-width: 1700px;
 }
 
+.padded-bottom {
+  padding-bottom: rem;
+}
+
+.card-set {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  &.single-card {
+    padding: 0 4rem 0 2rem;
+    .card {
+      width: 100%;
+      .card-photo-container img {
+        max-height: 45.5rem;
+      }
+    }
+    .floating-box {
+      max-width: 36.7rem;
+      top: 7.1rem;
+      h1 {
+        margin-block-start: 2rem;
+        margin-block-end: 1.5rem;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4.8rem;
+      }
+      p {
+        font-size: 1.31rem;
+        line-height: 2.2rem;
+        max-width: 95%;
+        margin-block-end: 3.5rem;
+      }
+      .button-link {
+        padding: 1rem 2.4rem;
+      }
+    }
+  }
+
+  &.two-cards {
+    padding: 0 1.1rem;
+    .card {
+      width: 48%;
+      .card-photo-container img {
+        max-height: 43.3rem;
+      }
+    }
+    .floating-box {
+      top: 8.3rem;
+      p {
+        color: $lightest;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 1.2rem;
+        margin-bottom: 3rem;
+        line-height: 2.7rem;
+        padding-right: 1rem;
+        max-width: 27.4rem;
+      }
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .floating-box {
+    left: 0;
+  }
+}
 
 .button-link {
-    color: white;
-    background-color: $eposBlue;
-    border-radius: 2rem;
-    font-size: 1.55rem;
-    font-weight: 500;
-    padding: 1rem 3.3rem;
-    &:hover {
-        background-color: $eposBlueHover;
-    }
-    transition: background-color 200ms;
+  color: white;
+  background-color: $eposBlue;
+  border-radius: 2rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+  padding: 1rem 3.3rem;
+  &:hover {
+    background-color: $eposBlueHover;
+  }
+  transition: background-color 200ms;
 }
 
 .centered-box {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .floating-box {
-    position: absolute;
-    background-color: white;
-    padding: 0.8rem 0rem 4rem 3.3rem;
-    min-width: 28.4rem;
-    max-width: 32rem;
-    box-shadow: 0 0.8rem 4rem $cardShadow;
-    h3 {
-      font-size: 3rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      margin-top: 2rem;
-    }
-    &.padded {
-      padding-right: 1.4rem;
-    }
+  position: absolute;
+  background-color: white;
+  padding: 0.8rem 0rem 4rem 3.3rem;
+  min-width: 28.4rem;
+  max-width: 32rem;
+  box-shadow: 0 0.8rem 4rem $cardShadow;
+  h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
   }
+  &.padded {
+    padding-right: 1.4rem;
+  }
+}
