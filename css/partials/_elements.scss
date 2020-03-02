@@ -3,6 +3,10 @@
     color: $medium;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: $eposBlue;

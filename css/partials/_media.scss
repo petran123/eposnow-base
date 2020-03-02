@@ -1,0 +1,127 @@
+@media screen and (max-width: 1280px) {
+  .card-set {
+    &.two-cards {
+      .floating-box {
+        top: 54%;
+        left: -6%;
+        padding: 0rem 1rem 3rem 2rem;
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.33rem;
+          max-width: 18.4rem;
+        }
+      }
+    }
+  }
+  .video-container .floating-box {
+    max-width: 20rem;
+    padding: 0rem 0rem 2rem 2.5rem;
+    top: 10%;
+    left: 0;
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.33rem;
+      max-width: 18.4rem;
+    }
+    .quote {
+      font-size: 1.1rem;
+    }
+    .underlined-link {
+      display: inline-block;
+      margin-top: 2rem;
+      margin-left: 0;
+    }
+  }
+
+  .small-card-set .small-card p {
+    font-size: 1.25rem;
+    padding: 0rem 2rem;
+  }
+  .till-set.index-till-set .till-image img {
+    transform: scale(1.3);
+  }
+  .legal-container {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+    .mobile-menu-button {
+        display:block;
+      }
+  .header-link {
+    display: none;
+  }
+  .header-contact .button-link {
+    display: none;
+  }
+  .header-logo,
+  .header-contact {
+      border: none;
+  }
+  .card-set {
+    &.two-cards {
+      .card {
+        width: 90%;
+        justify-self: center;
+        margin-bottom: 2rem;
+      }
+      .floating-box {
+        left: 0;
+      }
+    }
+  }
+  .small-card-set .small-card {
+    max-width: 100%;
+  }
+  .till-set.index-till-set .till-image img {
+    transform: scale(2) translate(-2.5rem, -2.2rem);
+  }
+  .centered-paragraph {
+    max-width: 90%;
+  }
+  .video-container {
+    .floating-box {
+      top: 18%;
+      left: -0.5rem;
+    }
+    .image-holder {
+      width: 100%;
+      overflow: hidden;
+      img {
+        width: 140%;
+        display: block;
+        transform: translatex(-280px);
+      }
+    }
+    .trustpilot-reviews-placeholder {
+      display: none;
+    }
+  }
+  .footer-box {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .footer-list {
+    width: 34%;
+  }
+  .legal-container {
+    padding: 4.5rem 1rem;
+    .legal-item {
+      .indented {
+        margin-inline-start: 0;
+      }
+      .footer-link {
+        margin: 0 0.3rem;
+      }
+    }
+    p a {
+      display: inline-block;
+    }
+  }
+}
+

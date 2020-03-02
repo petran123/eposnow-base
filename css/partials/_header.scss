@@ -1,4 +1,4 @@
-.header {
+header {
   width: 100%;
 }
 
@@ -18,18 +18,6 @@
 .header-left {
   .header-link {
     margin-left: 1.65rem;
-  }
-}
-
-.header-link {
-  &.pricing {
-    margin-left: 1.2rem;
-  }
-  &.greyed {
-      color: $lightest;
-  }
-  img {
-    transform: scale(0.8);
   }
 }
 
@@ -53,6 +41,17 @@
   display: inline-flex;
   align-items: center;
   color: $medium;
+
+  &.pricing {
+    margin-left: 1.2rem;
+  }
+  &.greyed {
+    color: $lightest;
+  }
+  img {
+    transform: scale(0.8);
+  }
+
   svg {
     color: #777;
     width: 1.2rem;
@@ -80,4 +79,14 @@
   letter-spacing: 1px;
   color: $eposBlue;
   font-weight: 700;
+}
+
+.mobile-menu-button {
+  background: white;
+  border: none;
+  display: none;
+  width: 3rem;
+  img {
+    width: 100%;
+  }
 }

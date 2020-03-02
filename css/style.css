@@ -346,6 +346,10 @@ template {
   color: #444;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #00b4fa;
@@ -360,12 +364,48 @@ p {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1700px;
 }
 
 .padded-bottom {
   padding-bottom: rem;
+}
+
+.floating-box {
+  top: 17rem;
+  left: 1.5rem;
+}
+
+.floating-box h3 {
+  line-height: 3.7rem;
+  -webkit-margin-before: 1.5rem;
+          margin-block-start: 1.5rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+}
+
+.floating-box p {
+  font-size: 1.33rem;
+  line-height: 2.1rem;
+  -webkit-margin-after: 2.7rem;
+          margin-block-end: 2.7rem;
+}
+
+.floating-box .quote {
+  color: #00b4fa;
+  font-size: 1.34rem;
+  font-weight: 600;
+}
+
+.floating-box .button-link {
+  padding: 1rem 1.65rem;
+}
+
+.floating-box svg {
+  vertical-align: text-top;
+  margin-right: 0.3rem;
+  margin-left: -0.3rem;
 }
 
 .card-set {
@@ -383,14 +423,19 @@ p {
 
 .card-set.single-card {
   padding: 0 4rem 0 2rem;
+  margin-bottom: 6rem;
 }
 
 .card-set.single-card .card {
   width: 100%;
 }
 
+.card-set.single-card .card .card-photo-container {
+  width: 86%;
+}
+
 .card-set.single-card .card .card-photo-container img {
-  max-height: 45.5rem;
+  width: 100%;
 }
 
 .card-set.single-card .floating-box {
@@ -489,8 +534,6 @@ p {
   position: absolute;
   background-color: white;
   padding: 0.8rem 0rem 4rem 3.3rem;
-  min-width: 28.4rem;
-  max-width: 32rem;
   -webkit-box-shadow: 0 0.8rem 4rem rgba(119, 119, 119, 0.35);
           box-shadow: 0 0.8rem 4rem rgba(119, 119, 119, 0.35);
 }
@@ -506,7 +549,299 @@ p {
   padding-right: 1.4rem;
 }
 
-.header {
+.till-set .till-image {
+  width: calc(100% - 44.1rem);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.till-set.index-till-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 3rem;
+}
+
+.till-set.index-till-set .till-image {
+  margin-left: -2rem;
+}
+
+.till-set.index-till-set .till-image img {
+  width: 100%;
+}
+
+.till-set.index-till-set .left-side {
+  margin: 6.5rem 0 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.till-set.index-till-set .left-side .techradar {
+  margin-bottom: 5rem;
+}
+
+.till-set.index-till-set .left-side .techradar .techradar-images {
+  max-width: 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.till-set.index-till-set .left-side .techradar .techradar-images img {
+  width: 43%;
+}
+
+.till-set.index-till-set .left-side .techradar .techradar-images img:first-of-type {
+  width: 44%;
+}
+
+.till-set.index-till-set .left-side .techradar p {
+  font-size: 1.16rem;
+  line-height: 1.9rem;
+  max-width: 41rem;
+  margin-left: 1.7rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution {
+  margin-left: 2rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution h2 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 4.2rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution ul li {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 3.2rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution ul li img {
+  width: 2rem;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+
+.till-set.index-till-set .left-side .the-complete-solution .button-link {
+  padding: 1rem 2.5rem;
+}
+
+.till-set.retail-till-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-top: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.till-set.retail-till-set .till-image img {
+  width: 115%;
+}
+
+.till-set.retail-till-set .left-side {
+  margin: 6.5rem 0 0 3rem;
+  position: relative;
+  z-index: 1;
+  margin-right: -10rem;
+}
+
+.till-set.retail-till-set .left-side .techradar {
+  margin-bottom: 5rem;
+}
+
+.till-set.retail-till-set .left-side .techradar .techradar-images {
+  max-width: 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.till-set.retail-till-set .left-side .techradar .techradar-images img {
+  width: 43%;
+}
+
+.till-set.retail-till-set .left-side .techradar .techradar-images img:first-of-type {
+  width: 44%;
+}
+
+.till-set.retail-till-set .left-side .techradar p {
+  font-size: 1.16rem;
+  line-height: 1.9rem;
+  max-width: 41rem;
+  margin-left: 1.7rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution {
+  margin-left: 2rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution h2 {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 4.2rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution ul li {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 3.2rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution ul li img {
+  width: 2rem;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+
+.till-set.retail-till-set .left-side .the-complete-solution .button-link {
+  padding: 1rem 2.5rem;
+}
+
+.underlined-link {
+  color: #00b4fa;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0.4rem 0.3rem 0.4rem;
+  border-bottom: solid 3px #00b4fa;
+}
+
+.underlined-link img {
+  vertical-align: middle;
+}
+
+.video-container {
+  padding: 9.5rem 4rem;
+  position: relative;
+}
+
+.video-container .image-holder {
+  width: 88%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.video-container .image-holder img {
+  width: 100%;
+  display: block;
+}
+
+.video-container h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 600;
+}
+
+.video-container .floating-box {
+  width: 38.5rem;
+}
+
+.video-container .underlined-link {
+  margin-left: 1.8rem;
+}
+
+.image-with-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.image-with-list.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-with-list .image-holder {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 54%;
+}
+
+.image-with-list .image-holder.larger {
+  width: 55%;
+}
+
+.image-with-list .image-holder img {
+  width: 100%;
+}
+
+.image-with-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.image-with-list ul li {
+  color: #666;
+}
+
+.image-with-list .list-holder {
+  width: 40%;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-with-list .list-holder img {
+  margin-right: 1rem;
+}
+
+.image-with-list .list-holder h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 5rem auto;
+}
+
+.image-with-list .list-holder p,
+.image-with-list .list-holder li {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.image-with-list .list-holder .underlined-link {
+  line-height: 4rem;
+}
+
+.image-with-list .list-holder .less-margin {
+  margin: 0;
+}
+
+header {
   width: 100%;
 }
 
@@ -537,19 +872,6 @@ p {
   margin-left: 1.65rem;
 }
 
-.header-link.pricing {
-  margin-left: 1.2rem;
-}
-
-.header-link.greyed {
-  color: #999;
-}
-
-.header-link img {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
 .header-right .header-link {
   margin-right: 1.7rem;
 }
@@ -573,6 +895,19 @@ p {
       -ms-flex-align: center;
           align-items: center;
   color: #444;
+}
+
+.header-link.pricing {
+  margin-left: 1.2rem;
+}
+
+.header-link.greyed {
+  color: #999;
+}
+
+.header-link img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header-link svg {
@@ -606,6 +941,17 @@ p {
   letter-spacing: 1px;
   color: #00b4fa;
   font-weight: 700;
+}
+
+.mobile-menu-button {
+  background: white;
+  border: none;
+  display: none;
+  width: 3rem;
+}
+
+.mobile-menu-button img {
+  width: 100%;
 }
 
 .footer-link {
@@ -737,6 +1083,7 @@ p {
 }
 
 .trustpilot {
+  display: block;
   margin-top: 4rem;
   margin-bottom: 9rem;
   max-width: -webkit-fit-content;
@@ -745,7 +1092,8 @@ p {
 }
 
 .trustpilot img {
-  width: 57rem;
+  width: 100%;
+  max-width: 57rem;
 }
 
 .centered-paragraph {
@@ -835,155 +1183,6 @@ p {
   line-height: 2.4rem;
 }
 
-.till-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin-top: 3rem;
-}
-
-.till-set .left-side {
-  margin: 6.5rem 0 0 3rem;
-  max-width: 42rem;
-  position: relative;
-  z-index: 1;
-}
-
-.till-set .left-side .techradar {
-  margin-bottom: 5rem;
-}
-
-.till-set .left-side .techradar .techradar-images {
-  max-width: 42rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.till-set .left-side .techradar .techradar-images img {
-  width: 43%;
-}
-
-.till-set .left-side .techradar .techradar-images img:first-of-type {
-  width: 44%;
-}
-
-.till-set .left-side .techradar p {
-  font-size: 1.16rem;
-  line-height: 1.9rem;
-  max-width: 41rem;
-  margin-left: 1.7rem;
-}
-
-.till-set .left-side .the-complete-solution {
-  margin-left: 2rem;
-}
-
-.till-set .left-side .the-complete-solution h2 {
-  color: #333;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.till-set .left-side .the-complete-solution ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 4.2rem;
-}
-
-.till-set .left-side .the-complete-solution ul li {
-  font-size: 1.5rem;
-  color: #555;
-  line-height: 3.2rem;
-}
-
-.till-set .left-side .the-complete-solution ul li img {
-  width: 2rem;
-  vertical-align: text-bottom;
-  margin-right: 0.5rem;
-}
-
-.till-set .left-side .the-complete-solution .button-link {
-  padding: 1rem 2.5rem;
-}
-
-.till-set .till-image {
-  width: calc(100% - 43.5rem);
-  margin-left: -2rem;
-}
-
-.till-set .till-image img {
-  width: 100%;
-}
-
-.video-container {
-  padding: 9.5rem 4rem;
-  position: relative;
-}
-
-.video-container .image-holder {
-  width: 88%;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.video-container .image-holder img {
-  width: 100%;
-  display: block;
-}
-
-.video-container .floating-box {
-  top: 17rem;
-  left: 1.5rem;
-}
-
-.video-container .floating-box h3 {
-  line-height: 3.7rem;
-  -webkit-margin-before: 1.5rem;
-          margin-block-start: 1.5rem;
-  -webkit-margin-after: 1.5rem;
-          margin-block-end: 1.5rem;
-}
-
-.video-container .floating-box p {
-  font-size: 1.33rem;
-  line-height: 2.1rem;
-  -webkit-margin-after: 2.7rem;
-          margin-block-end: 2.7rem;
-}
-
-.video-container .floating-box .quote {
-  color: #00b4fa;
-  font-size: 1.34rem;
-  font-weight: 600;
-}
-
-.video-container .floating-box .button-link {
-  padding: 1rem 1.65rem;
-}
-
-.video-container .floating-box .underlined {
-  color: #00b4fa;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-left: 1.8rem;
-  padding: 0 0.4rem 0.3rem 0.4rem;
-  border-bottom: solid 3px #00b4fa;
-}
-
-.video-container .floating-box svg {
-  vertical-align: text-top;
-  margin-right: 0.3rem;
-  margin-left: -0.3rem;
-}
-
 .trustpilot-floating-image {
   position: absolute;
   bottom: -154px;
@@ -992,5 +1191,129 @@ p {
 
 .trustpilot-floating-image img {
   width: 25rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .card-set.two-cards .floating-box {
+    top: 54%;
+    left: -6%;
+    padding: 0rem 1rem 3rem 2rem;
+  }
+  .card-set.two-cards .floating-box h3 {
+    font-size: 2rem;
+  }
+  .card-set.two-cards .floating-box p {
+    font-size: 1.33rem;
+    max-width: 18.4rem;
+  }
+  .video-container .floating-box {
+    max-width: 20rem;
+    padding: 0rem 0rem 2rem 2.5rem;
+    top: 10%;
+    left: 0;
+  }
+  .video-container .floating-box h3 {
+    font-size: 2rem;
+  }
+  .video-container .floating-box p {
+    font-size: 1.33rem;
+    max-width: 18.4rem;
+  }
+  .video-container .floating-box .quote {
+    font-size: 1.1rem;
+  }
+  .video-container .floating-box .underlined-link {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .small-card-set .small-card p {
+    font-size: 1.25rem;
+    padding: 0rem 2rem;
+  }
+  .till-set.index-till-set .till-image img {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .legal-container {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .mobile-menu-button {
+    display: block;
+  }
+  .header-link {
+    display: none;
+  }
+  .header-contact .button-link {
+    display: none;
+  }
+  .header-logo,
+  .header-contact {
+    border: none;
+  }
+  .card-set.two-cards .card {
+    width: 90%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 2rem;
+  }
+  .card-set.two-cards .floating-box {
+    left: 0;
+  }
+  .small-card-set .small-card {
+    max-width: 100%;
+  }
+  .till-set.index-till-set .till-image img {
+    -webkit-transform: scale(2) translate(-2.5rem, -2.2rem);
+            transform: scale(2) translate(-2.5rem, -2.2rem);
+  }
+  .centered-paragraph {
+    max-width: 90%;
+  }
+  .video-container .floating-box {
+    top: 18%;
+    left: -0.5rem;
+  }
+  .video-container .image-holder {
+    width: 100%;
+    overflow: hidden;
+  }
+  .video-container .image-holder img {
+    width: 140%;
+    display: block;
+    -webkit-transform: translatex(-280px);
+            transform: translatex(-280px);
+  }
+  .video-container .trustpilot-reviews-placeholder {
+    display: none;
+  }
+  .footer-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer-list {
+    width: 34%;
+  }
+  .legal-container {
+    padding: 4.5rem 1rem;
+  }
+  .legal-container .legal-item .indented {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+  }
+  .legal-container .legal-item .footer-link {
+    margin: 0 0.3rem;
+  }
+  .legal-container p a {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
