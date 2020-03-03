@@ -2,7 +2,7 @@
   .card-set {
     &.two-cards {
       .floating-box {
-        top: 54%;
+        top: 35%;
         left: -6%;
         padding: 0rem 1rem 3rem 2rem;
         h3 {
@@ -42,17 +42,27 @@
     padding: 0rem 2rem;
   }
   .till-set.index-till-set .till-image img {
-    transform: scale(1.3);
+    transform: scale(1.3) translatex(-6vw);
   }
   .legal-container {
     font-size: 1rem;
   }
+  .trustpilot-reviews-placeholder {
+    display: none;
+  }
+  .footer-box {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .footer-list {
+    width: 34%;
+  }
 }
 
 @media screen and (max-width: 980px) {
-    .mobile-menu-button {
-        display:block;
-      }
+  .mobile-menu-button {
+    display: block;
+  }
   .header-link {
     display: none;
   }
@@ -61,7 +71,7 @@
   }
   .header-logo,
   .header-contact {
-      border: none;
+    border: none;
   }
   .card-set {
     &.two-cards {
@@ -95,19 +105,9 @@
       img {
         width: 140%;
         display: block;
-        transform: translatex(-280px);
+        transform: translatex(-28vw);
       }
     }
-    .trustpilot-reviews-placeholder {
-      display: none;
-    }
-  }
-  .footer-box {
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-  }
-  .footer-list {
-    width: 34%;
   }
   .legal-container {
     padding: 4.5rem 1rem;
@@ -125,3 +125,92 @@
   }
 }
 
+@media screen and (max-width: 979px) {
+  .till-set.index-till-set {
+    .left-side {
+      margin: 0;
+    }
+    .till-image {
+      display: none;
+    }
+  }
+  .trustpilot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card-set.two-cards .card {
+    flex-flow: row wrap;
+    .floating-box {
+      width: 50%;
+      top: 10%;
+    }
+  }
+
+  .legal-container {
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .video-container,
+  .card-set.two-cards {
+    justify-content: center;
+    .card {
+      .card-photo-container {
+        width: 100%;
+      }
+      .floating-box {
+        width: 100%;
+        text-align: center;
+        p {
+          max-width: 100%;
+        }
+        .button-link {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+    .floating-box {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-tel {
+    display: none;
+  }
+  .button-link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button-link svg {
+    display: none;
+  }
+  .underlined-link {
+    font-size: 1.25rem;
+  }
+  //.legal-container .legal-right .legal-item
+
+  .legal-container {
+    .legal-left,
+    .legal-right {
+      .legal-item {
+        flex-flow: row wrap;
+        justify-content: center;
+        .footer-link {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

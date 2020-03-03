@@ -373,7 +373,7 @@ p {
 }
 
 .floating-box {
-  top: 17rem;
+  top: 16%;
   left: 1.5rem;
 }
 
@@ -473,8 +473,12 @@ p {
   width: 48%;
 }
 
+.card-set.two-cards .card .card-photo-container {
+  width: 71%;
+}
+
 .card-set.two-cards .card .card-photo-container img {
-  max-height: 43.3rem;
+  width: 100%;
 }
 
 .card-set.two-cards .floating-box {
@@ -1195,7 +1199,7 @@ header {
 
 @media screen and (max-width: 1280px) {
   .card-set.two-cards .floating-box {
-    top: 54%;
+    top: 35%;
     left: -6%;
     padding: 0rem 1rem 3rem 2rem;
   }
@@ -1232,11 +1236,26 @@ header {
     padding: 0rem 2rem;
   }
   .till-set.index-till-set .till-image img {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.3) translatex(-6vw);
+            transform: scale(1.3) translatex(-6vw);
   }
   .legal-container {
     font-size: 1rem;
+  }
+  .trustpilot-reviews-placeholder {
+    display: none;
+  }
+  .footer-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer-list {
+    width: 34%;
   }
 }
 
@@ -1284,23 +1303,8 @@ header {
   .video-container .image-holder img {
     width: 140%;
     display: block;
-    -webkit-transform: translatex(-280px);
-            transform: translatex(-280px);
-  }
-  .video-container .trustpilot-reviews-placeholder {
-    display: none;
-  }
-  .footer-box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .footer-list {
-    width: 34%;
+    -webkit-transform: translatex(-28vw);
+            transform: translatex(-28vw);
   }
   .legal-container {
     padding: 4.5rem 1rem;
@@ -1314,6 +1318,105 @@ header {
   }
   .legal-container p a {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .till-set.index-till-set .left-side {
+    margin: 0;
+  }
+  .till-set.index-till-set .till-image {
+    display: none;
+  }
+  .trustpilot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card-set.two-cards .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .card-set.two-cards .card .floating-box {
+    width: 50%;
+    top: 10%;
+  }
+  .legal-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .video-container,
+  .card-set.two-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .video-container .card .card-photo-container,
+  .card-set.two-cards .card .card-photo-container {
+    width: 100%;
+  }
+  .video-container .card .floating-box,
+  .card-set.two-cards .card .floating-box {
+    width: 100%;
+    text-align: center;
+  }
+  .video-container .card .floating-box p,
+  .card-set.two-cards .card .floating-box p {
+    max-width: 100%;
+  }
+  .video-container .card .floating-box .button-link,
+  .card-set.two-cards .card .floating-box .button-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-container .floating-box,
+  .card-set.two-cards .floating-box {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-tel {
+    display: none;
+  }
+  .button-link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .button-link svg {
+    display: none;
+  }
+  .underlined-link {
+    font-size: 1.25rem;
+  }
+  .legal-container .legal-left .legal-item,
+  .legal-container .legal-right .legal-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .legal-container .legal-left .legal-item .footer-link,
+  .legal-container .legal-right .legal-item .footer-link {
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
